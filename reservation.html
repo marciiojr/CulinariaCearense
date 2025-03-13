@@ -37,14 +37,14 @@
                 <div class="flex flex-col items-center py-4">
                     <!-- Logo "Culinária Cearense." -->
                     <div class="text-center mb-2">
-                        <a href="index.html" class="text-4xl font-semibold font-satisfy">Culinaria Cearense<span class="text-yellow-400">.</span></a>
+                        <a href="index.html" class="text-4xl font-semibold font-satisfy">Culinaria Cearense<span class="text-red-600">.</span></a>
                     </div>
                     <!-- Links de navegação -->
                     <div class="text-center">
                         <ul class="flex space-x-4">
-                            <li><a href="index.html" class="text-base hover:text-yellow-400">HOME</a></li>
-                            <li><a href="menu.html" class="text-base hover:text-yellow-400">MENU</a></li>
-                            <li><a href="reservation.html" class="text-base hover:text-yellow-400">RESERVAS</a></li>
+                            <li><a href="index.html" class="text-base hover:text-red-600">HOME</a></li>
+                            <li><a href="menu.html" class="text-base hover:text-red-600">MENU</a></li>
+                            <li><a href="reservation.html" class="text-base hover:text-red-600">RESERVAS</a></li>
                         </ul>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
         </nav>
 
         <!-- Header -->
-        <header class="relative bg-cover bg-center text-white mt-16" style="background-image: url(images/hero_1.jpeg);">
+        <header class="relative bg-cover bg-center text-white mt-16" style="background-image: url(images/backgrond_img.jpg);">
             <div class="absolute inset-0 bg-black opacity-20"></div>
             <div class="container mx-auto px-4">
                 <div class="flex justify-center items-center h-screen">
@@ -75,11 +75,15 @@
                     <form action="#" class="space-y-6">
                         <div>
                             <label for="name" class="block text-lg font-semibold mb-2">Seu Nome</label>
-                            <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded">
+                            <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded placeholder:text-gray-500" placeholder="Digite seu Nome e Sobrenome">
+                        </div>
+                        <div>
+                            <label for="name" class="block text-lg font-semibold mb-2">Telefone</label>
+                            <input type="tel" id="telefone" class="w-full p-2 border border-gray-300 rounded placeholder:text-gray-500" placeholder="85 00000-0000">
                         </div>
                         <div>
                             <label for="many" class="block text-lg font-semibold mb-2">Quantas Pessoas</label>
-                            <select id="many" class="w-full p-2 border border-gray-300 rounded">
+                            <select id="many" class="w-full p-2 border border-gray-300 rounded placeholder:text-gray-500" placeholder="Selecione uma opção">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -91,7 +95,11 @@
                             <input type="datetime-local" id="taskdatetime" class="w-full p-2 border border-gray-300 rounded">
                         </div>
                         <div>
-                            <button type="submit" class="w-full bg-yellow-600 text-white py-2 px-4 rounded hover:bg-yellow-700">Reservar</button>
+                            <label for="name" class="block text-lg font-semibold mb-2">Observações</label>
+                            <input type="text" id="observacoes" class="w-full p-2 border border-gray-300 rounded placeholder:text-gray-500" placeholder="(Opcional) Mesa proximo ao Jardim..">
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-red-600 text-white font-bold py-2 px-4 rounded hover:bg-red-800">Reservar</button>
                         </div>
                     </form>
                 </div>
