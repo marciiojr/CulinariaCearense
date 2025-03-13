@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Culinaria Cearense</title>
+    <meta name="description" content="Free HTML5 Website Template by freehtml5.co">
+    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive">
+    <meta name="author" content="freehtml5.co">
+
+    <!-- Carregando as fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuração das fontes no Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cormorant': ['Cormorant Garamond', 'serif'],
+                        'satisfy': ['Satisfy', 'cursive'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'scale-up': 'scaleUp 0.5s ease-in-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        scaleUp: {
+                            '0%': { transform: 'scale(1)' },
+                            '100%': { transform: 'scale(1.05)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-cormorant">
+    <div id="page">
+        <!-- Navbar -->
+        <nav class="bg-zinc-800 text-white fixed w-full top-0 z-50">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col items-center py-4">
+                    <!-- Logo "Culinária Cearense." -->
+                    <div class="text-center mb-2">
+                        <a href="index.html" class="text-4xl font-semibold font-satisfy hover:text-red-600 transition duration-300">Culinaria Cearense<span class="text-red-600">.</span></a>
+                    </div>
+                    <!-- Links de navegação -->
+                    <div class="text-center">
+                        <ul class="flex space-x-4">
+                            <li><a href="index.html" class="text-base hover:text-red-600 transition duration-300">HOME</a></li>
+                            <li><a href="menu.html" class="text-base hover:text-red-600 transition duration-300">MENU</a></li>
+                            <li><a href="reservation.html" class="text-base hover:text-red-600 transition duration-300">RESERVAS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="relative bg-cover bg-center text-white mt-16" style="background-image: url(images/backgrond_img.jpg);">
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div class="container mx-auto px-4">
+                <div class="flex justify-center items-center h-screen">
+                    <div class="text-center animate-fade-in">
+                        <h1 class="text-4xl md:text-6xl font-bold font-satisfy">O Melhor café <span class="text-red-600">&amp;</span> Restaurante <span class="text-red-600">é na</span> Culinaria Cearense</h1>
+                        <h2 class="text-xl md:text-2xl mt-4">Sabores autênticos da nossa terra.</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Featured Menu -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-semibold font-satisfy mb-8">Cardápio de hoje</h2>
+                <p class="text-2xl mb-12">Sabores que aquecem o coração! Hoje servimos pratos preparados com carinho e tradição, garantindo uma experiência gastronômica única.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center hover:scale-105 transition-transform duration-300">
+                        <img src="images/menu_feijoada.jpg" class="w-full h-48 object-cover mb-4" alt="Feijoada">
+                        <h3 class="text-2xl font-semibold font-satisfy">Feijoada</h3>
+                        <span class="text-lg text-yellow-600">R$65<sup>.90</sup></span>
+                        <p class="text-base mt-2">Uma deliciosa feijoada completa, preparada com ingredientes selecionados e tempero caseiro. O sabor perfeito para um almoço especial!</p>
+                    </div>
+                    <div class="text-center hover:scale-105 transition-transform duration-300">
+                        <img src="images/menu_baiao.jpg" class="w-full h-48 object-cover mb-4" alt="Baião de Dois">
+                        <h3 class="text-2xl font-semibold font-satisfy">Baião de Dois</h3>
+                        <span class="text-lg text-yellow-600">R$19<sup>.90</sup></span>
+                        <p class="text-base mt-2">Um clássico da culinária nordestina! Feijão verde, arroz soltinho, queijo coalho derretido e um toque especial de temperos regionais.</p>
+                    </div>
+                    <div class="text-center hover:scale-105 transition-transform duration-300">
+                        <img src="images/menu_galinhaCaipira.jpg" class="w-full h-48 object-cover mb-4" alt="Galinha Caipira">
+                        <h3 class="text-2xl font-semibold font-satisfy">Galinha Caipira</h3>
+                        <span class="text-lg text-yellow-600">R$39<sup>.99</sup></span>
+                        <p class="text-base mt-2">Frango caipira cozido lentamente com temperos regionais, servido com arroz, feijão e farofa.</p>
+                    </div>
+                    <div class="text-center hover:scale-105 transition-transform duration-300">
+                        <img src="images/menu_peixada.jpg" class="w-full h-48 object-cover mb-4" alt="Peixada">
+                        <h3 class="text-2xl font-semibold font-satisfy">Peixada</h3>
+                        <span class="text-lg text-yellow-600">R$49<sup>.90</sup></span>
+                        <p class="text-base mt-2">Uma deliciosa peixada cearense com peixe fresco, legumes cozidos no tempero especial da casa e acompanhada de pirão e arroz branco.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-semibold font-satisfy mb-8">Nosso Cardápio Autêntico & Especial</h2>
+                <p class="text-2xl mb-12">Sabores inesquecíveis do Ceará esperam por você! Nossos pratos são preparados com ingredientes frescos e receitas tradicionais, trazendo o melhor da culinária nordestina diretamente para a sua mesa.</p>
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full sm:w-1/2 lg:w-1/3 mb-8 hover:scale-105 transition-transform duration-300">
+                        <img src="images/menu_peixeFrito.jpg" class="w-full h-64 object-cover mb-4" alt="Prato de Crustáceos">
+                        <h3 class="text-xl font-semibold">Peixe Frito com Baião de Dois</h3>
+                        <p class="p-[5px]">Peixe crocante por fora e suculento por dentro, servido com baião de dois, vinagrete e farofa de carne de sol.</p>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3 mb-8 hover:scale-105 transition-transform duration-300">
+                        <img src="images/menu_carangueijo.jpg" class="w-full h-64 object-cover mb-4" alt="Tuna & Roast Beef">
+                        <h3 class="text-xl font-semibold">Carangueijo ao molho de coco</h3>
+                        <p class="p-[5px]">Um dos clássicos da culinária praiana cearense! Caranguejo cozido no leite de coco com temperos especiais, acompanhado de farofa.</p>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3 mb-8 hover:scale-105 transition-transform duration-300">
+                        <img src="images/menu_tapioca.jpg" class="w-full h-64 object-cover mb-4" alt="Egg with Mushroom">
+                        <h3 class="text-xl font-semibold">Tapioca Recheada</h3>
+                        <p class="p-[5px]">Tradição cearense em cada mordida! Tapioca recheada com opções como carne de sol, queijo coalho ou coco com leite condensado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-zinc-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-between">
+                    <div class="w-full sm:w-1/3 mb-8">
+                        <h4 class="text-xl font-semibold">Culinaria Cearense</h4>
+                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+                    </div>
+                    <div class="w-full sm:w-1/3 mb-8">
+                        <h4 class="text-xl font-semibold">Links</h4>
+                        <ul>
+                            <li><a href="index.html" class="hover:text-red-600 transition duration-300">Home</a></li>
+                            <li><a href="menu.html" class="hover:text-red-600 transition duration-300">Menu</a></li>
+                            <li><a href="reservation.html" class="hover:text-red-600 transition duration-300">Reservas</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full sm:w-1/3 mb-8">
+                        <h4 class="text-xl font-semibold">Informações de Contato</h4>
+                        <ul>
+                            <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
+                            <li><a href="tel://1234567920" class="hover:text-red-600 transition duration-300">+ 1235 2355 98</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
